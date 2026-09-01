@@ -13,6 +13,7 @@ import {
   LogOut,
   User as UserIcon,
 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { Dashboard } from './views/Dashboard';
 import { ScanProduct } from './views/ScanProduct';
 import { LiveCameraScan } from './views/LiveCameraScan';
@@ -246,6 +247,7 @@ export const App: React.FC = () => {
           />
         </Routes>
       </BrowserRouter>
+      <Analytics />
     </AuthProvider>
   );
 };
